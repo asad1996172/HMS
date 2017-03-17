@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.body_login{
+    background-repeat: no-repeat;
+    background-position: -39px 0px;
+    width: 100%;
+    min-height: 562px;
+    background: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.body_signup{
+    background-repeat: no-repeat;
+    background-position: -39px 0px;
+    width: 100%;
+    min-height: 1300px;
+    background: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.body_signup_driver{
+    background-repeat: no-repeat;
+    background-position: -39px 0px;
+    width: 100%;
+    min-height: 1100px;
+    background: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+}
+
+.payment-type{
+    border-radius: 6px;
+    margin-left: 20px;
+    border: 2px solid #000000;
+    font-weight: bold;
+}
+.payment-type2{
+    border-radius: 6px;
+    margin-left: 20px;
+    border: 2px solid #5bc0de;
+    font-weight: bold;
+}
+
+
+.spacing {
+    padding-top:7px;
+    padding-bottom:7px;
+    color:#000000;
+}
+.middlePage {
+    width: 500px;
+	
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    ;
+}
+
+.signup_card{
+    width: 500px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 60px 0;
+}
+.logo {
+    color:#808080;
+}

@@ -1,0 +1,44 @@
+
+<!-- saved from url=(0059)http://resources.infolinks.com/static/an/usersyncup-an.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+<body>
+<script type="text/javascript">
+            function readCuidCookie() {
+            var nameEQ = "cuid=";
+            var ca = document.cookie.split( ';' );
+            for( var i = 0, leni = ca.length; i < leni; i++ ) {
+                var c = ca[i].trim();
+                if( c.indexOf( nameEQ ) == 0 ) {
+                    return c.substring( nameEQ.length, c.length );
+                }
+            }
+            return null;
+        }
+        function injectAppNexusUserSyncPixel() {
+            var cuid = readCuidCookie();
+            if( cuid ) {
+                var img = document.createElement( "img" );
+                img.src= "//ib.adnxs.com/mapuid?member=3251&user=" + cuid ;
+                img.height= "1";
+                img.width= "1" ;
+                img.style.display = "none" ;
+                if (document.body) document.body.appendChild( img );
+                return true;
+            }
+            return false;
+        }
+
+        
+        if (!injectAppNexusUserSyncPixel()){
+            var attempt = 0;
+            var intervalNumber = setInterval( function () {
+            if( injectAppNexusUserSyncPixel() || attempt > 700 ) {
+                clearInterval(intervalNumber);
+            }
+            attempt += 1;
+        }, 50 );    
+        }
+     
+    </script><img src="./mapuid" height="1" width="1" style="display: none;">
+
+</body></html>
