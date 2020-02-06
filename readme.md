@@ -22,6 +22,25 @@ Thank you for considering contributing to the Laravel framework! The contributio
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
+## How to Run
+In order to run this repository, following these instructions:
+1) Clone this repository
+2) Install Xampp
+3) Run Xampp server and MySql through Xampp Control Panel
+4) Put this repository's folder in Xampp/htdocs/
+5) Open PhpMyAdmin and create and empty Database
+6) Load hms.sql into that database
+7) Install PHP
+8) Install Composer
+9) Open this repository in terminal and write 
+`composer install --ignore-platform-req`
+10) Create .env file in repos folder
+11) In terminal write `php artisan server`
+
+![](https://github.com/asad1996172/HMS/blob/master/1.png)
+![](https://github.com/asad1996172/HMS/blob/master/2.png)
+![](https://github.com/asad1996172/HMS/blob/master/3.png)
+![](https://github.com/asad1996172/HMS/blob/master/4.png)
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
